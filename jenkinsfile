@@ -5,22 +5,19 @@ stages
 stage('Build') 
 {
 steps{
-echo "Building the Code.........."
-bat "npm clean"
+echo "Building the 
 }
 }
 stage('Test') 
 {
 steps{
 echo "Testing the Code.........."
-bat "npm test"
 }
 }
 stage('Compile') 
 {
 steps{
 echo "Compiling the Project.........."
-bat "npm compile"
 }
 }
 stage('Deploy') 
